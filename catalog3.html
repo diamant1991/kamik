@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>kamik-group</title>
+</head>
+<body class="preset_2 preset_11 side-light">
+	<div class="mobile-menu-wrap js-mobile-menu">
+	  <div class="mobile-menu">
+	    <div class="mobile-menu__personal">
+	      <div class="mobile-menu__profile">
+	        <a href="/auth/">Вход</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/auth/?register=yes">Регистрация</a>
+	      </div>
+	      <div class="mobile-menu__personal-icons">
+	        <a class="inmenucompare" href="/catalog/compare.php"><i class="fa fa-align-left"></i>
+	        <div class="js-compareinfo" style="display: inline;">
+	          <span class="js-comparelist-count"><span class="count">0</span></span>
+	        </div></a> <a></a> <a class="inmenufavorite" href="/personal/favorite/" id="inheadfavorite_mobile" title="Избранное"><i class="fa fa-heart"></i>
+	        <div class="js-favorinfo" style="display: inline;">
+	          <span class="count js-favorinfo_count">0</span>
+	        </div></a>
+	      </div>
+	    </div>
+	    <ul class="mobile-menu-nav js-mobile-menu-nav">
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/brands/">Все производители</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/suppliers/">Поставщикам</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/about/dostavka-i-oplata/">Доставка</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/about/payment/">Способы оплаты</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/news/">Новости</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/about/action/">Акции</a>
+	      </li>
+	      <li class="mobile-menu-nav__element">
+	        <a class="mobile-menu-nav__link" href="/contacts/">Контакты<span class="mobile-menu-nav__arrow">
+	          <i class="fa fa-angle-right"></i>
+	        </span></a>
+	        <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back"></span></a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link disabled" href="/contacts/">Контакты</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/contacts/?">Контактная информация</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/contacts/nashi-magaziny/">Наши адреса</a>
+	          </li>
+	          <li class="mobile-menu-nav__element last">
+	            <a class="mobile-menu-nav__link" href="/contacts/rekvizity/">Реквизиты</a>
+	          </li>
+	        </ul>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/services/">Услуги<span class="mobile-menu-nav__arrow">
+	          <i class="fa fa-angle-right"></i>
+	        </span></a>
+	        <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back">
+	              <i class="fa fa-angle-right"></i>
+	            </span></a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link disabled" href="/services/">Услуги</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/shefmontazh/">Шефмонтаж</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/kompleksnoe_osnashchenie/">Комплексное оснащение</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/tekhnicheskaya_planirovka/">Техническая планировка</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/montazh/">Монтаж</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/proektirovanie/">Проектирование</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/restorannoe_konsultirovanie/">Ресторанное консультирование</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/tekhnologicheskaya-planirovka-i-rasstanovka-oborudovaniya">Технологическая планировка и расстановка оборудования</a>
+	          </li>
+	          <li class="mobile-menu-nav__element last">
+	            <a class="mobile-menu-nav__link" href="/services/vosstanovlenie-i-modernizatsiya-oborudovaniya">Восстановление и модернизация Б/У оборудования</a>
+	          </li>
+	        </ul>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/projects/">Проекты<span class="mobile-menu-nav__arrow">
+	          <i class="fa fa-angle-right"></i>
+	        </span></a>
+	        <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back"></span></a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link disabled" href="/projects/">Проекты</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/projects/finished/">Реализованные</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/projects/current/">Текущие</a>
+	          </li>
+	          <li class="mobile-menu-nav__element last">
+	            <a class="mobile-menu-nav__link" href="/projects/perspective/">Перспективные</a>
+	          </li>
+	        </ul>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/stati-i-obzory/">Полезная информация</a>
+	      </li>
+	      <li class="mobile-menu-nav__element last" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/about/">О компании<span class="mobile-menu-nav__arrow">
+	          <i class="fa fa-angle-right"></i>
+	        </span></a>
+	        <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back"></span></a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link disabled" href="/about/">О компании</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/production/">Производство</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/dileram/">Дилерам</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/partners/">Партнеры</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/clients/">Клиенты</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/fotogallery/">Портфолио</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/waranty/">Гарантия и сервис</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/payment/">Оплата</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/reviews/">Отзывы</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/action/">Акции</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/dostavka-i-oplata/">Доставка</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/licenses/">Лицензии и сертификаты</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/kak-zakazat/">Как заказать?</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/karera-v-kompanii/">Вакансии</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/rasprodaga/">Распродажа</a>
+	          </li>
+	          <li class="mobile-menu-nav__element last">
+	            <a class="mobile-menu-nav__link" href="/contacts/?">Контакты</a>
+	          </li>
+	        </ul>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+
+	<header>
+	    <div class="container header-top_line">
+	        <div class="col-xs-12 col-md-12 col-lg-12 hidden-xs">
+	            <div class="row">
+	                <div class="col-sm-2 col-xs-4 col-md-5 col-lg-5"></div>
+	                <div class="col-sm-12 col-xs-8 col-md-7 col-lg-7">
+	                    <div class="topmenu_item">
+	                        <a href="#">О компании</a>
+	                    </div>
+	                    <div class="topmenu_item">
+	                        <a href="#" class="popup_link" title="Cвяжитесь с нами">Свяжитесь с нами</a>
+	                    </div>
+	                    <div class="topmenu_item">
+	                        <div class="topmenu_item__margin">
+	                            <span class="city__line-label">Ваш город:</span>
+	                            <div class="city__line-context">
+	                                <span class="city__line-name">Москва</span>
+	                                <div class="city__line-question"   style="display: none">
+	                                    <div class="city__line-question-text">
+	                                        Ваш город<br>
+	                                        <span class="_city__line-city">Москва</span>?
+	                                    </div>
+	                                    <div class="city__line-question-btn-block">
+	                                        <div class="city__line-question-btn-no">Нет</div>
+	                                        <div class="city__line-question-btn-yes">Да</div>
+	                                    </div>
+	                                </div>
+	                                <div class="city__line-info" style="display: none">
+	                                    <div class="city__line-info-content">
+	                                        <a href="#" rel="nofollow" target="_blank">Подробнее о доставке</a>
+	                                    </div>
+	                                    <div class="city__line-info-btn-block">
+	                                        <div class="city__line-info-btn">Изменить город</div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="topmenu_item">
+	                        <span class="authinhead dropdown" id="authinhead">
+	                            <a href="#">Вход</a>
+	                            <span class="prom">или</span>
+	                            <a href="#">Регистрация</a>
+	                        </span>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="header-main__block">
+	        <div class="fly-header" id="fly-header">
+	            <div class="fly-header-sidenav-button js-toggle-mainmenu">
+	                <div class="fly-header-sidenav-button__valign">
+	                    <div class="fly-header-sidenav-button__lines">
+	                        <div class="line"></div>
+	                        <div class="line"></div>
+	                        <div class="line"></div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="fly-header__logo">
+	                <a href="#">
+	                    <img src="./images/logo.png" alt="">
+	                </a>
+	            </div>
+	            <div class="fly-header__tagline">
+	                <div class="header-slogan">
+	                    <span class="roboto aprimary">Производитель оборудования<br>из нержавеющей стали</span>
+	                </div>
+	            </div>
+	            <div class="fly-header__contacts">
+	                <div class="header-contacts">
+	                    <div class="header-contacts__phone">
+	                        <a href="tel:+74996411111" rel="nofollow">+7(499) 641-11-11</a>
+	                    </div>
+	                    <div class="header-contacts__adress">г. Москва, ул. 2-я Звенигородская 12 стр 5</div>
+	                    <div>
+	                        <a href="mailto:info@kamik-group.ru" rel="nofollow">info@kamik-group.ru</a>
+	                    </div>
+	                    <div>Время работы: Пн-Пт: с 9.30 до 18.00</div>
+	                </div>
+	            </div>
+	            <div class="fly-header__search">
+	                <div class="loss-menu-right views fly-header__search-icon js-fly-header__search-icon">
+	                    <a class="selected" href="#" onclick="return false;">
+	                        <i class="fa fa-search"></i>
+	                    </a>
+	                </div>
+	                <div class="header-search__form">
+	                    <div class="fly-header__search-close"><i class="fa fa-times"></i></div>
+	                    <div class="~visible-xs ~visible-sm ~visible-md ~hidden-md ~hidden-lg">
+	                        <div id="title-search" class="searchinhead nowrap">
+	                            <form>
+	                                <div class="input-group form">
+	                                    <input type="text" class="form-item form-control" value="" size="40" maxlength="50" autocomplete="off" id="title-search-input" name="q" placeholder="">
+	                                    <div class="input-group-btn">
+	                                        <input class="btn btn-default btn2" name="s" type="submit" value="Поиск">
+	                                    </div>
+	                                </div>
+	                            </form>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="fly-header__icons">
+	                <div class="clearfix" style="position: relative;">
+	                    <div id="bx_basket1" class="bx-basket">
+	                        <div class="loss-menu-right loss-menu-right_count basketinhead">
+	                            <a class="selected dropdown-toggle views" href="#" id="dropdown_basket_link">
+	                                <i class="fa fa-shopping-cart"></i>
+	                                <span class="count">0</span>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="hidden-xs">
+	                        <div class="loss-menu-right loss-menu-right_count pull-right inheadfavorite">
+	                            <a id="inheadfavorite" class="selected" href="#" title="Избранное">
+	                                <i class="fa fa-heart"></i>
+	                                <div id="favorinfo" class="js-favorinfo">
+	                                    <span class="count js-favorinfo_count">0</span>
+	                                </div>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="dropdown-favorite loss-menu-right" id="dropdown_favorite">
+	                        <div id="bxdynamic_OQ3k9P_start" style="display:none"></div>
+	                        <div class="row">
+	                            <div class="col col-md-12">
+	                                <div class="alert alert-info">
+	                                    У вас еще нет избранных товаров.
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="top-menu">
+	          <div class="container">
+	            <ul class="top-menu__block">
+	              <li>
+	                <a href="#">Все оборудование</a>
+	              </li>
+	              <li>
+	                <a href="#">Нейтральное оборудование</a>
+	                <div class="top-menu__dropdown">
+	                  <ul class="top-menu__dropdown__item">
+	                    <li>
+	                      <a href="#">Пункт 1</a>
+	                    </li>
+	                    <li>
+	                      <a href="#">Пункт 2</a>
+	                    </li>
+	                    <li>
+	                      <a href="#">Пункт 3</a>
+	                      <ul>
+	                        <li>
+	                          <a href="#">Подпункт 1</a>
+	                        </li>
+	                        <li>
+	                          <a href="#">Подпункт 2</a>
+	                        </li>
+	                        <li>
+	                          <a href="#">Подпункт 3</a>
+	                        </li>
+	                      </ul>
+	                    </li>
+	                  </ul>
+	                </div>
+	              </li>
+	              <li>
+	                <a href="#">Холодильное</a>
+	              </li>
+	              <li>
+	                <a href="#">Тепловое</a>
+	              </li>
+	            </ul>
+	          </div>
+	        </div>
+	    </div>
+	</header>
+
+	<div class="container container--page">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-title">
+					<ul class="breadcrumb" id="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="/" itemprop="item" title="Главная"><span itemprop="name">Главная</span></a>
+							<i class="fa fa-angle-right"></i>
+							<meta content="1" itemprop="position">
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="/catalog/" itemprop="item" title="Каталог"><span itemprop="name">Каталог</span></a>
+							<i class="fa fa-angle-right"></i>
+							<meta content="2" itemprop="position">
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<span itemprop="name">Нейтральное оборудование</span>
+							<meta content="3" itemprop="position">
+						</li>
+					</ul>
+					<h1>Нейтральное оборудование</h1>
+				</div>
+
+				<div class="catalog-content">
+					<div class="catalog-content__header row no-gutters align-items-center justify-content-between">
+						<div>
+							<div class="hidden-xs loss-menu-right">
+								<span class="title">Выводить по:</span>
+								<div class="dropdown js-sorter">
+									<select class="btn select-item select-item--auto">
+										<option value="">30</option>
+										<option value="">40</option>
+									</select>
+								</div>
+								<div class="dropdown">
+									<select class="btn select-item select-item--auto">
+										<option value="">По популярности</option>
+										<option value="">По цене</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="view-block">
+							<div class="loss-menu-right js-views-switcher" data-index="showcase">
+								<a class="selected js-sorterajax-switcher" data-fvalue="showcase" rel="nofollow" title="showcase"><i class="fa showcase"></i></a>
+							</div>
+							<div class="loss-menu-right js-views-switcher" data-index="list">
+								<a class="selected js-sorterajax-switcher" data-fvalue="list" rel="nofollow" title="list"><i class="fa list"></i></a>
+							</div>
+							<div class="loss-menu-right active js-views-switcher" data-index="table">
+								<a class="selected js-sorterajax-switcher" data-fvalue="list_little" rel="nofollow" title="list_little"><i class="fa list_little"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="showcase" class="product-view active">
+					<div class="row products products_showcase">
+						<div class="col-lg-3 products__item">
+							<div class="products__in">
+								<div class="products__pic">
+									<a class="js-compare-label js-detail_page_url" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/"><img alt="станция бармена (барная станция) 1200*400(600)*850" class="products__img js-preview" src="http://via.placeholder.com/300x239" title="станция бармена (барная станция) 1200*400(600)*850"></a>
+									<div class="marks"></div>
+								</div>
+								<div class="products__data">
+									<div class="products__name">
+										<a class="products-title js-compare-name" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Станция бармена (барная станция) 1200*400(600)*850">Станция бармена (барная станция) 1200*400(600)*850</a><br>
+									</div>
+									<div class="visible-xs separator"></div>
+									<div class="products__description hidden-xs">
+										Производитель: КАМИК
+									</div>
+									<div class="products__description hidden-xs">
+										Длина: 1200мм
+									</div>
+									<div class="products__description hidden-xs">
+										Ширина: 600мм
+									</div>
+									<div class="products__description hidden-xs">
+										Высота: 850мм
+									</div>
+									<div class="products__prices">
+										<div class="prices">
+											<div class="hidden-xs prices__title"></div>
+											<div class="prices__values">
+												<div class="prices__val prices__val_cool">
+													57 556 руб.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="products__detail">
+										<!--noindex-->
+										<div class="row clearfix buttons-section">
+											<div class="col-md-12	hidden-xs">
+												<form class="add2basketform js-buyform48534 usequantity" id="add2basketform" name="add2basketform">
+													<div class="pull-left quantity-block">
+														<select class="btn select-item">
+															<option value="">
+																10
+															</option>
+															<option value="">
+																20
+															</option>
+														</select>
+													</div>
+													<div class="pull-right">
+														<button class="btn btn-default btn2 products-button js-add2basketlink add2basketlink" data-loading-text="В корзине" data-popup="Y" rel="nofollow" type="submit" value="">В корзину</button>
+													</div>
+													<div class="clearfix"></div>
+													<div>
+														<br>
+														<a class="selected btn btn-default -btn2 btn-button product-buyblock__buy1click js-buy1click JS-Popup-Ajax" data-insertdata="{&quot;RS_EXT_FIELD_0&quot;:&quot;[48534] Станция бармена (барная станция) 1200*400(600)*850&quot;}" href="/forms/buy1click/" role="button" style="font-size:13px;width:100%; display:block" title="Купить в 1 клик">Купить в 1 клик</a>
+													</div>
+												</form>
+											</div>
+										</div><!--/noindex-->
+										<div class="row clearfix quantity-wrapper">
+											<div class="col col-xs-4 col-left">
+												<span class="identifer">Артикул: <span class="js-article">314&nbsp;090</span></span>
+											</div><!--noindex-->
+											<div class="col col-xs-8 col-right text-right pull-right">
+												<span class="stores" data-firstelement="48534"><span class="stores-label"></span> <span class="js-quantity-amount"><span class="stores-icon"></span><span class="genamount empty">нет</span></span></span> 
+											</div><!--/noindex-->
+										</div><!--noindex-->
+										<div class="row clearfix compare-wrapper">
+											<div class="col col-xs-6 col-left">
+												<span class="icon-east js-compare-box"><a class="js-compare-switcher js-toggle-switcher" href="/catalog/neytralnoe-oborudovanie/?action=ADD_TO_COMPARE_LIST&amp;id=48534"><i class="fa fa-align-left"></i><span>К сравнению</span></a></span>
+											</div>
+											<div class="col col-xs-6 col-right text-right">
+												<span class="icon-east js-favorite js-favorite-heart" data-detailpageurl="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" data-elementid="48534"><a href="javascript:;"><i class="fa fa-heart"></i><span class="hidden-sm">Избранное</span></span>
+											</div>
+										</div><!--/noindex-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 products__item">
+							<div class="products__in">
+								<div class="products__pic">
+									<a class="js-compare-label js-detail_page_url" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/"><img alt="станция бармена (барная станция) 1200*400(600)*850" class="products__img js-preview" src="http://via.placeholder.com/300x239" title="станция бармена (барная станция) 1200*400(600)*850"></a>
+									<div class="marks"></div>
+								</div>
+								<div class="products__data">
+									<div class="products__name">
+										<a class="products-title js-compare-name" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Станция бармена (барная станция) 1200*400(600)*850">Станция бармена (барная станция) 1200*400(600)*850</a><br>
+									</div>
+									<div class="visible-xs separator"></div>
+									<div class="products__description hidden-xs">
+										Производитель: КАМИК
+									</div>
+									<div class="products__description hidden-xs">
+										Длина: 1200мм
+									</div>
+									<div class="products__description hidden-xs">
+										Ширина: 600мм
+									</div>
+									<div class="products__description hidden-xs">
+										Высота: 850мм
+									</div>
+									<div class="products__prices">
+										<div class="prices">
+											<div class="hidden-xs prices__title"></div>
+											<div class="prices__values">
+												<div class="prices__val prices__val_cool">
+													57 556 руб.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="products__detail">
+										<!--noindex-->
+										<div class="row clearfix buttons-section">
+											<div class="col-md-12	hidden-xs">
+												<form class="add2basketform js-buyform48534 usequantity" id="add2basketform" name="add2basketform">
+													<div class="pull-left quantity-block">
+														<select class="btn select-item">
+															<option value="">
+																10
+															</option>
+															<option value="">
+																20
+															</option>
+														</select>
+													</div>
+													<div class="pull-right">
+														<button class="btn btn-default btn2 products-button js-add2basketlink add2basketlink" data-loading-text="В корзине" data-popup="Y" rel="nofollow" type="submit" value="">В корзину</button>
+													</div>
+													<div class="clearfix"></div>
+													<div>
+														<br>
+														<a class="selected btn btn-default -btn2 btn-button product-buyblock__buy1click js-buy1click JS-Popup-Ajax" data-insertdata="{&quot;RS_EXT_FIELD_0&quot;:&quot;[48534] Станция бармена (барная станция) 1200*400(600)*850&quot;}" href="/forms/buy1click/" role="button" style="font-size:13px;width:100%; display:block" title="Купить в 1 клик">Купить в 1 клик</a>
+													</div>
+												</form>
+											</div>
+										</div><!--/noindex-->
+										<div class="row clearfix quantity-wrapper">
+											<div class="col col-xs-4 col-left">
+												<span class="identifer">Артикул: <span class="js-article">314&nbsp;090</span></span>
+											</div><!--noindex-->
+											<div class="col col-xs-8 col-right text-right pull-right">
+												<span class="stores" data-firstelement="48534"><span class="stores-label"></span> <span class="js-quantity-amount"><span class="stores-icon"></span><span class="genamount empty">нет</span></span></span> 
+											</div><!--/noindex-->
+										</div><!--noindex-->
+										<div class="row clearfix compare-wrapper">
+											<div class="col col-xs-6 col-left">
+												<span class="icon-east js-compare-box"><a class="js-compare-switcher js-toggle-switcher" href="/catalog/neytralnoe-oborudovanie/?action=ADD_TO_COMPARE_LIST&amp;id=48534"><i class="fa fa-align-left"></i><span>К сравнению</span></a></span>
+											</div>
+											<div class="col col-xs-6 col-right text-right">
+												<span class="icon-east js-favorite js-favorite-heart" data-detailpageurl="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" data-elementid="48534"><a href="javascript:;"><i class="fa fa-heart"></i><span class="hidden-sm">Избранное</span></span>
+											</div>
+										</div><!--/noindex-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 products__item">
+							<div class="products__in">
+								<div class="products__pic">
+									<a class="js-compare-label js-detail_page_url" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/"><img alt="станция бармена (барная станция) 1200*400(600)*850" class="products__img js-preview" src="http://via.placeholder.com/300x239" title="станция бармена (барная станция) 1200*400(600)*850"></a>
+									<div class="marks"></div>
+								</div>
+								<div class="products__data">
+									<div class="products__name">
+										<a class="products-title js-compare-name" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Станция бармена (барная станция) 1200*400(600)*850">Станция бармена (барная станция) 1200*400(600)*850</a><br>
+									</div>
+									<div class="visible-xs separator"></div>
+									<div class="products__description hidden-xs">
+										Производитель: КАМИК
+									</div>
+									<div class="products__description hidden-xs">
+										Длина: 1200мм
+									</div>
+									<div class="products__description hidden-xs">
+										Ширина: 600мм
+									</div>
+									<div class="products__description hidden-xs">
+										Высота: 850мм
+									</div>
+									<div class="products__prices">
+										<div class="prices">
+											<div class="hidden-xs prices__title"></div>
+											<div class="prices__values">
+												<div class="prices__val prices__val_cool">
+													57 556 руб.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="products__detail">
+										<!--noindex-->
+										<div class="row clearfix buttons-section">
+											<div class="col-md-12	hidden-xs">
+												<form class="add2basketform js-buyform48534 usequantity" id="add2basketform" name="add2basketform">
+													<div class="pull-left quantity-block">
+														<select class="btn select-item">
+															<option value="">
+																10
+															</option>
+															<option value="">
+																20
+															</option>
+														</select>
+													</div>
+													<div class="pull-right">
+														<button class="btn btn-default btn2 products-button js-add2basketlink add2basketlink" data-loading-text="В корзине" data-popup="Y" rel="nofollow" type="submit" value="">В корзину</button>
+													</div>
+													<div class="clearfix"></div>
+													<div>
+														<br>
+														<a class="selected btn btn-default -btn2 btn-button product-buyblock__buy1click js-buy1click JS-Popup-Ajax" data-insertdata="{&quot;RS_EXT_FIELD_0&quot;:&quot;[48534] Станция бармена (барная станция) 1200*400(600)*850&quot;}" href="/forms/buy1click/" role="button" style="font-size:13px;width:100%; display:block" title="Купить в 1 клик">Купить в 1 клик</a>
+													</div>
+												</form>
+											</div>
+										</div><!--/noindex-->
+										<div class="row clearfix quantity-wrapper">
+											<div class="col col-xs-4 col-left">
+												<span class="identifer">Артикул: <span class="js-article">314&nbsp;090</span></span>
+											</div><!--noindex-->
+											<div class="col col-xs-8 col-right text-right pull-right">
+												<span class="stores" data-firstelement="48534"><span class="stores-label"></span> <span class="js-quantity-amount"><span class="stores-icon"></span><span class="genamount empty">нет</span></span></span> 
+											</div><!--/noindex-->
+										</div><!--noindex-->
+										<div class="row clearfix compare-wrapper">
+											<div class="col col-xs-6 col-left">
+												<span class="icon-east js-compare-box"><a class="js-compare-switcher js-toggle-switcher" href="/catalog/neytralnoe-oborudovanie/?action=ADD_TO_COMPARE_LIST&amp;id=48534"><i class="fa fa-align-left"></i><span>К сравнению</span></a></span>
+											</div>
+											<div class="col col-xs-6 col-right text-right">
+												<span class="icon-east js-favorite js-favorite-heart" data-detailpageurl="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" data-elementid="48534"><a href="javascript:;"><i class="fa fa-heart"></i><span class="hidden-sm">Избранное</span></span>
+											</div>
+										</div><!--/noindex-->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="list" class="product-view">
+					<div class="row products products_list">
+					<div class="col col-md-12">
+						<div class="products__in">
+							<div class="row">
+								<div class="col col-xs-4 col-sm-3 col-md-3 col-lg-2">
+									<div class="products__col products__pic text-center">
+										<a class="js-compare-label js-detail_page_url" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/"><img alt="станция бармена (барная станция) 1200*400(600)*850" class="products__img js-preview" src="http://via.placeholder.com/300x239" title="станция бармена (барная станция) 1200*400(600)*850"></a>
+									</div>
+								</div>
+								<div class="col col-xs-8 col-sm-9 col-md-9 col-lg-10">
+									<div class="products__data">
+										<div class="row">
+											<div class="col col-sm-8 col-md-8 col-lg-10 products__col">
+												<div class="products__name">
+													<a class="products-title js-compare-name" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Станция бармена (барная станция) 1200*400(600)*850">Станция бармена (барная станция) 1200*400(600)*850</a><br>
+												</div>
+												<div class="products__category hidden-xs">
+													<a class="category-label" href="/catalog/neytralnoe-oborudovanie/stantsii-barmena/">Станции бармена</a>
+												</div>
+												<div class="products__description hidden-xs">
+													Производитель: КАМИК
+												</div>
+												<div class="products__description hidden-xs">
+													Длина: 1200мм
+												</div>
+												<div class="products__description hidden-xs">
+													Ширина: 600мм
+												</div>
+												<div class="products__description hidden-xs">
+													Высота: 850мм
+												</div>
+												<div class="products-foot hidden-xs">
+													<div class="row">
+														<div class="col col-xs-12">
+															<span class="products-foot__item"><span class="identifer text-nowrap">Артикул: <span class="js-article">314&nbsp;090</span></span></span><!--noindex--> 
+															<span class="products-foot__item"><span class="icon-east js-compare-box"><a class="js-compare-switcher" href="/catalog/neytralnoe-oborudovanie/?action=ADD_TO_COMPARE_LIST&amp;id=48534&amp;isAjax=Y"><i class="fa fa-align-left"></i><span class="hidden-when-need">К сравнению</span></a></span></span>
+															<span class="products-foot__item"><span class="icon-east js-favorite js-favorite-heart" data-detailpageurl="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" data-elementid="48534"><a href="javascript:;"><i class="fa fa-heart"></i><span class="hidden-when-need">Избранное</span></a></span></span><!--/noindex-->
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col col-sm-4 col-md-4 col-lg-2 text-center text-left-xs products__col products__col_last">
+												<div class="products-box text-left">
+													<div class="products__prices">
+														<div class="products__prices-item">
+															<div class="prices">
+																<div class="hidden-xs prices__title"></div>
+																<div class="prices__values prices__values_simple">
+																	<div class="prices__val prices__val_cool js_price_pdv-4">
+																		57 556 руб.
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<!--noindex-->
+														<form class="add2basketform js-buyform48534 usequantity" id="add2basketform" name="add2basketform">
+															<div class="products-buttons clearfix">
+																<select class="btn select-item">
+																	<option value="">10</option>
+																	<option value="">20</option>
+																</select>
+															</div>
+															<div class="products-buttons clearfix">
+																<button class="btn btn-default btn2 products-button js-add2basketlink add2basketlink" data-loading-text="В корзине" rel="nofollow" type="submit" value="">В корзину</button>
+															</div>
+															<div class="products-buttons clearfix">
+																<a class="selected btn btn-default btn-button product-buyblock__buy1click js-buy1click JS-Popup-Ajax" data-insertdata="{&quot;RS_EXT_FIELD_0&quot;:&quot;[48534] Станция бармена (барная станция) 1200*400(600)*850&quot;}" href="/forms/buy1click/" role="button" style="font-size:13px;" title="Купить в 1 клик">Купить в 1 клик</a>
+															</div>
+														</form><!--/noindex-->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+
+				<div id="table" class="product-view">
+					<div class="row products products_table">
+						<div class="col col-md-12">
+							<div class="products__in">
+								<div class="row">
+									<div class="col col-xs-4 col-sm-2 col-md-2">
+										<div class="products__col products__pic text-center">
+											<a class="js-compare-label js-detail_page_url" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/"><img alt="станция бармена (барная станция) 1200*400(600)*850" class="products__img js-preview" src="http://via.placeholder.com/300x239" title="станция бармена (барная станция) 1200*400(600)*850"></a>
+										</div>
+									</div>
+									<div class="col col-xs-8 col-sm-10 col-md-10">
+										<div class="products__data">
+											<div class="row">
+												<div class="col col-sm-6 col-md-5 col-lg-5 products__col">
+													<div class="products__name">
+														<a class="products-title js-compare-name" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Станция бармена (барная станция) 1200*400(600)*850">Станция бармена (барная станция) 1200*400(600)*850</a><br>
+													</div>
+													<div class="products__description hidden-xs">
+														Производитель: КАМИК
+													</div><span class="products__description hidden-xs">Длина: 1200мм |</span> <span class="products__description hidden-xs">Ширина: 600мм |</span> <span class="products__description hidden-xs">Высота: 850мм |</span>
+													<div class="products-foot hidden-xs">
+														<div class="row">
+															<div class="col col-xs-12">
+																<span class="products-foot__item"><span class="identifer text-nowrap">Артикул: <span class="js-article">314&nbsp;090</span></span></span><!--noindex--> <span class="products-foot__item"><span class="stores" data-firstelement="48534"><span class="stores-label"></span> <span class="js-quantity-amount"><span class="stores-icon"></span></span></span> 
+																</span> <span class="products-foot__item"><span class="icon-east js-compare-box"><a class="js-compare-switcher" href="/catalog/neytralnoe-oborudovanie/?action=ADD_TO_COMPARE_LIST&amp;id=48534&amp;isAjax=Y"><i class="fa fa-align-left"></i><span class="hidden-when-need-early">К сравнению</span></a></span></span><span class="products-foot__item"><span class="icon-east js-favorite js-favorite-heart" data-detailpageurl="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" data-elementid="48534"><a href="javascript:;"><i class="fa fa-heart"></i><span class="hidden-when-need-early">Избранное</span></a></span></span><!--/noindex-->
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col col-sm-2 col-md-3 col-lg-4 text-center products__col products__col_last products__col-prices">
+													<div class="products__prices">
+														<div class="products__prices-item">
+															<div class="prices">
+																<div class="hidden-xs prices__title"></div>
+																<div class="prices__values">
+																	<div class="prices__val prices__val_cool">
+																		57 556 руб.
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col col-sm-4 col-md-4 col-lg-3 text-center text-left-xs hidden-xs products__col products__col_last">
+													<div class="products-box">
+														<!--noindex-->
+														<form class="add2basketform js-buyform48534 usequantity" id="add2basketform" name="add2basketform">
+															<div class="loss-menu-right loss-menu-right views">
+																<select class="btn select-item">
+																	<option value="">10</option>
+																	<option value="">20</option>
+																</select>
+															</div>
+															<div class="loss-menu-right loss-menu-right views active">
+																<a class="selected btn btn-default btn-button product-buyblock__buy1click js-buy1click JS-Popup-Ajax" data-insertdata="{&quot;RS_EXT_FIELD_0&quot;:&quot;[48534] Станция бармена (барная станция) 1200*400(600)*850&quot;}" href="/forms/buy1click/" role="button" title="Купить в 1 клик">+</a>
+															</div>
+															<div class="loss-menu-right loss-menu-right_last views">
+																<button class="selected js-add2basketlink add2basketlink" data-loading-text="..." data-popup="Y" rel="nofollow" title="В корзину" type="submit" value=""><i class="fa fa-shopping-cart"></i></button>
+															</div>
+														</form><!--/noindex-->
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer_header">
+                    <a href="#">Все оборудование</a>
+                </div>
+                <ul class="list-unstyled footer_menu">
+                    <li><a href="#">Всё оборудование</a></li>
+                    <li><a href="#">Нейтральное оборудование</a></li>
+                    <li><a href="#">Витрины нейтральные</a></li>
+                    <li><a href="#">Холодильное</a></li>
+                    <li><a href="#">Тепловое</a></li>
+                    <li><a href="#">Электромеханическое</a></li>
+                    <li><a href="#">Посудомоечное</a></li>
+                    <li><a href="#">Линии раздачи</a></li>
+                    <li><a href="#">Весовое</a></li>
+                    <li><a href="#">Фильтры водяные</a></li>
+                    <li><a href="#">ХОЛОДИЛЬНОЕ ОБОРУДОВАНИЕ</a></li>
+                    <li><a href="#">Оборудование Камик</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="footer_header">
+                    <a href="#">Все услуги</a>
+                </div>
+                <ul class="list-unstyled footer_menu">
+                    <li><a href="#">Шефмонтаж</a></li>
+                    <li><a href="#">Комплексное оснащение</a></li>
+                    <li><a href="#">Техническая планировка</a></li>
+                    <li><a href="#">Монтаж</a></li>
+                    <li><a href="#">Проектирование</a></li>
+                    <li><a href="#">Ресторанное консультирование</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="footer_header">
+                    <a href="#">О компании</a>
+                </div>
+                <ul class="list-unstyled footer_menu">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Производство</a></li>
+                    <li><a href="#">Дилерам</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="footer_header">
+                    <a href="tel: +74996411111" rel="nofollow">+7(499) 641-11-11</a>
+                </div>
+                <div class="address_block">
+                    <div>
+                        <span class="banner_desc_nowrap">Адрес:</span><br>
+                        <span class="banner_desc_nowrap">г. Москва, ул. 2-я Звенигородская 12 стр.5 </span>
+                        <span class="banner_desc_nowrap"><br>Адрес проходной: </span> <br>
+                        <span class="banner_desc_nowrap">г. Москва, ул. 2-я Звенигородская 3 </span>
+                        <span class="banner_desc_nowrap"><br>Часы работы:</span><br>
+                        <span class="banner_desc_nowrap">пн-чт с 9:30 до 18:00 пт- с 9:30 до 17:30<br></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer_copyright_container">
+        <div class="footer_copyright">
+            <a href="/"><img src="./images/logo_footer.png"></a>
+            <div class="footer_copyright_description">
+                Производитель оставляет за собой право менять характеристики продукции без предварительного уведомления, изображение товара может отличаться от фактического внешнего вида изделия.
+                <br>
+                Информация, размещенная на сайте, носит исключительно справочный характер и не является публичной офертой, определяемой положениями ст. 437 ГК РФ.
+                <br>
+                2002-2018 ТД "Камик". Производство и продажа оборудования из нержавеющей стали для заведений общепита.</div>
+        </div>
+    </div>
+	</footer>
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/owl.carousel.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

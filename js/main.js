@@ -50,6 +50,33 @@ $(document).ready(function() {
         }
     });
 
+    $('.productsmini-owl-slider').owlCarousel({
+        loop:false,
+        dots:false,
+        nav:false,
+        autoplay:false,
+        margin:20,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:4,
+                nav:false
+            },
+            1459:{
+                items:5,
+                nav:false
+            }
+        }
+    });
+
     $('.products-new, .category-owl-slider, .partners-owl-slider, .portfolio-owl-slider').owlCarousel({
         loop:true,
         dots:false,

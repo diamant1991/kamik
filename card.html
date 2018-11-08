@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>kamik-group</title>
+</head>
+<body class="preset_2 preset_11 side-light">
+	<div class="mobile-menu-wrap js-mobile-menu">
+	  <div class="mobile-menu">
+	    <div class="mobile-menu__personal">
+	      <div class="mobile-menu__profile">
+	        <a href="/auth/">Вход</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="/auth/?register=yes">Регистрация</a>
+	      </div>
+	      <div class="mobile-menu__personal-icons">
+	        <a class="inmenucompare" href="/catalog/compare.php"><i class="fa fa-align-left"></i>
+	        <div class="js-compareinfo" style="display: inline;">
+	          <span class="js-comparelist-count"><span class="count">0</span></span>
+	        </div></a> <a></a> <a class="inmenufavorite" href="/personal/favorite/" id="inheadfavorite_mobile" title="Избранное"><i class="fa fa-heart"></i>
+	        <div class="js-favorinfo" style="display: inline;">
+	          <span class="count js-favorinfo_count">0</span>
+	        </div></a>
+	      </div>
+	    </div>
+	    <ul class="mobile-menu-nav js-mobile-menu-nav">
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/brands/">Все производители</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/suppliers/">Поставщикам</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/about/dostavka-i-oplata/">Доставка</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/about/payment/">Способы оплаты</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/news/">Новости</a>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/about/action/">Акции</a>
+	      </li>
+	      <li class="mobile-menu-nav__element">
+	        <a class="mobile-menu-nav__link" href="/contacts/">Контакты<span class="mobile-menu-nav__arrow">
+	          <i class="fa fa-angle-right"></i>
+	        </span></a>
+	        <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back"></span></a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link disabled" href="/contacts/">Контакты</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/contacts/?">Контактная информация</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/contacts/nashi-magaziny/">Наши адреса</a>
+	          </li>
+	          <li class="mobile-menu-nav__element last">
+	            <a class="mobile-menu-nav__link" href="/contacts/rekvizity/">Реквизиты</a>
+	          </li>
+	        </ul>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/services/">Услуги<span class="mobile-menu-nav__arrow">
+	          <i class="fa fa-angle-right"></i>
+	        </span></a>
+	        <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back">
+	              <i class="fa fa-angle-right"></i>
+	            </span></a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link disabled" href="/services/">Услуги</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/shefmontazh/">Шефмонтаж</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/kompleksnoe_osnashchenie/">Комплексное оснащение</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/tekhnicheskaya_planirovka/">Техническая планировка</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/montazh/">Монтаж</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/proektirovanie/">Проектирование</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/restorannoe_konsultirovanie/">Ресторанное консультирование</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/services/tekhnologicheskaya-planirovka-i-rasstanovka-oborudovaniya">Технологическая планировка и расстановка оборудования</a>
+	          </li>
+	          <li class="mobile-menu-nav__element last">
+	            <a class="mobile-menu-nav__link" href="/services/vosstanovlenie-i-modernizatsiya-oborudovaniya">Восстановление и модернизация Б/У оборудования</a>
+	          </li>
+	        </ul>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/projects/">Проекты<span class="mobile-menu-nav__arrow">
+	          <i class="fa fa-angle-right"></i>
+	        </span></a>
+	        <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back"></span></a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link disabled" href="/projects/">Проекты</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/projects/finished/">Реализованные</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/projects/current/">Текущие</a>
+	          </li>
+	          <li class="mobile-menu-nav__element last">
+	            <a class="mobile-menu-nav__link" href="/projects/perspective/">Перспективные</a>
+	          </li>
+	        </ul>
+	      </li>
+	      <li class="mobile-menu-nav__element" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/stati-i-obzory/">Полезная информация</a>
+	      </li>
+	      <li class="mobile-menu-nav__element last" style="display: list-item;">
+	        <a class="mobile-menu-nav__link" href="/about/">О компании<span class="mobile-menu-nav__arrow">
+	          <i class="fa fa-angle-right"></i>
+	        </span></a>
+	        <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back"></span></a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link disabled" href="/about/">О компании</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/production/">Производство</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/dileram/">Дилерам</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/partners/">Партнеры</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/clients/">Клиенты</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/fotogallery/">Портфолио</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/waranty/">Гарантия и сервис</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/payment/">Оплата</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/reviews/">Отзывы</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/action/">Акции</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/dostavka-i-oplata/">Доставка</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/licenses/">Лицензии и сертификаты</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/kak-zakazat/">Как заказать?</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/karera-v-kompanii/">Вакансии</a>
+	          </li>
+	          <li class="mobile-menu-nav__element">
+	            <a class="mobile-menu-nav__link" href="/about/rasprodaga/">Распродажа</a>
+	          </li>
+	          <li class="mobile-menu-nav__element last">
+	            <a class="mobile-menu-nav__link" href="/contacts/?">Контакты</a>
+	          </li>
+	        </ul>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+
+	<header>
+	    <div class="container header-top_line">
+	        <div class="col-xs-12 col-md-12 col-lg-12 hidden-xs">
+	            <div class="row">
+	                <div class="col-sm-2 col-xs-4 col-md-5 col-lg-5"></div>
+	                <div class="col-sm-12 col-xs-8 col-md-7 col-lg-7">
+	                    <div class="topmenu_item">
+	                        <a href="#">О компании</a>
+	                    </div>
+	                    <div class="topmenu_item">
+	                        <a href="#" class="popup_link" title="Cвяжитесь с нами">Свяжитесь с нами</a>
+	                    </div>
+	                    <div class="topmenu_item">
+	                        <div class="topmenu_item__margin">
+	                            <span class="city__line-label">Ваш город:</span>
+	                            <div class="city__line-context">
+	                                <span class="city__line-name">Москва</span>
+	                                <div class="city__line-question"   style="display: none">
+	                                    <div class="city__line-question-text">
+	                                        Ваш город<br>
+	                                        <span class="_city__line-city">Москва</span>?
+	                                    </div>
+	                                    <div class="city__line-question-btn-block">
+	                                        <div class="city__line-question-btn-no">Нет</div>
+	                                        <div class="city__line-question-btn-yes">Да</div>
+	                                    </div>
+	                                </div>
+	                                <div class="city__line-info" style="display: none">
+	                                    <div class="city__line-info-content">
+	                                        <a href="#" rel="nofollow" target="_blank">Подробнее о доставке</a>
+	                                    </div>
+	                                    <div class="city__line-info-btn-block">
+	                                        <div class="city__line-info-btn">Изменить город</div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="topmenu_item">
+	                        <span class="authinhead dropdown" id="authinhead">
+	                            <a href="#">Вход</a>
+	                            <span class="prom">или</span>
+	                            <a href="#">Регистрация</a>
+	                        </span>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="header-main__block">
+	        <div class="fly-header" id="fly-header">
+	            <div class="fly-header-sidenav-button js-toggle-mainmenu">
+	                <div class="fly-header-sidenav-button__valign">
+	                    <div class="fly-header-sidenav-button__lines">
+	                        <div class="line"></div>
+	                        <div class="line"></div>
+	                        <div class="line"></div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="fly-header__logo">
+	                <a href="#">
+	                    <img src="./images/logo.png" alt="">
+	                </a>
+	            </div>
+	            <div class="fly-header__tagline">
+	                <div class="header-slogan">
+	                    <span class="roboto aprimary">Производитель оборудования<br>из нержавеющей стали</span>
+	                </div>
+	            </div>
+	            <div class="fly-header__contacts">
+	                <div class="header-contacts">
+	                    <div class="header-contacts__phone">
+	                        <a href="tel:+74996411111" rel="nofollow">+7(499) 641-11-11</a>
+	                    </div>
+	                    <div class="header-contacts__adress">г. Москва, ул. 2-я Звенигородская 12 стр 5</div>
+	                    <div>
+	                        <a href="mailto:info@kamik-group.ru" rel="nofollow">info@kamik-group.ru</a>
+	                    </div>
+	                    <div>Время работы: Пн-Пт: с 9.30 до 18.00</div>
+	                </div>
+	            </div>
+	            <div class="fly-header__search">
+	                <div class="loss-menu-right views fly-header__search-icon js-fly-header__search-icon">
+	                    <a class="selected" href="#" onclick="return false;">
+	                        <i class="fa fa-search"></i>
+	                    </a>
+	                </div>
+	                <div class="header-search__form">
+	                    <div class="fly-header__search-close"><i class="fa fa-times"></i></div>
+	                    <div class="~visible-xs ~visible-sm ~visible-md ~hidden-md ~hidden-lg">
+	                        <div id="title-search" class="searchinhead nowrap">
+	                            <form>
+	                                <div class="input-group form">
+	                                    <input type="text" class="form-item form-control" value="" size="40" maxlength="50" autocomplete="off" id="title-search-input" name="q" placeholder="">
+	                                    <div class="input-group-btn">
+	                                        <input class="btn btn-default btn2" name="s" type="submit" value="Поиск">
+	                                    </div>
+	                                </div>
+	                            </form>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="fly-header__icons">
+	                <div class="clearfix" style="position: relative;">
+	                    <div id="bx_basket1" class="bx-basket">
+	                        <div class="loss-menu-right loss-menu-right_count basketinhead">
+	                            <a class="selected dropdown-toggle views" href="#" id="dropdown_basket_link">
+	                                <i class="fa fa-shopping-cart"></i>
+	                                <span class="count">0</span>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="hidden-xs">
+	                        <div class="loss-menu-right loss-menu-right_count pull-right inheadfavorite">
+	                            <a id="inheadfavorite" class="selected" href="#" title="Избранное">
+	                                <i class="fa fa-heart"></i>
+	                                <div id="favorinfo" class="js-favorinfo">
+	                                    <span class="count js-favorinfo_count">0</span>
+	                                </div>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="dropdown-favorite loss-menu-right" id="dropdown_favorite">
+	                        <div id="bxdynamic_OQ3k9P_start" style="display:none"></div>
+	                        <div class="row">
+	                            <div class="col col-md-12">
+	                                <div class="alert alert-info">
+	                                    У вас еще нет избранных товаров.
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="top-menu">
+	          <div class="container">
+	            <ul class="top-menu__block">
+	              <li>
+	                <a href="#">Все оборудование</a>
+	              </li>
+	              <li>
+	                <a href="#">Нейтральное оборудование</a>
+	                <div class="top-menu__dropdown">
+	                  <ul class="top-menu__dropdown__item">
+	                    <li>
+	                      <a href="#">Пункт 1</a>
+	                    </li>
+	                    <li>
+	                      <a href="#">Пункт 2</a>
+	                    </li>
+	                    <li>
+	                      <a href="#">Пункт 3</a>
+	                      <ul>
+	                        <li>
+	                          <a href="#">Подпункт 1</a>
+	                        </li>
+	                        <li>
+	                          <a href="#">Подпункт 2</a>
+	                        </li>
+	                        <li>
+	                          <a href="#">Подпункт 3</a>
+	                        </li>
+	                      </ul>
+	                    </li>
+	                  </ul>
+	                </div>
+	              </li>
+	              <li>
+	                <a href="#">Холодильное</a>
+	              </li>
+	              <li>
+	                <a href="#">Тепловое</a>
+	              </li>
+	            </ul>
+	          </div>
+	        </div>
+	    </div>
+	</header>
+
+	<div class="container container--page">
+		<div class="row">
+			<div class="col col-md-12 maincontent  sidebar-wrap--left">
+				<div class="page-title">
+					<ul class="breadcrumb" id="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<a href="/" itemprop="item" title="Главная">
+								<span itemprop="name">Главная</span>
+							</a>
+							<div class="fa fa-angle-right"></div>
+							<meta content="1" itemprop="position">
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							<span itemprop="name">Каталог</span>
+							<meta content="2" itemprop="position">
+						</li>
+					</ul>
+					<h1>Оборудование для кафе, баров, ресторанов и столовых</h1>
+				</div>
+
+				<div class="product-card">
+					<div class="row">
+						<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 product-gallery">
+							<div class="product-detail-carousel">
+								<div class="product-detail-carousel__images">
+									<div class="product-detail-carousel__carousel js-detail-carousel">	
+										<div class="preview-wrap">
+											<a class="js-open_popupgallery" href="http://via.placeholder.com/720x570" data-fancybox><img alt="станция" class="preview" src="http://via.placeholder.com/720x570"></a>
+										</div>
+									</div>
+								</div>
+								<div class="product-detail-carousel__nav-wrap">
+									<div class="product-detail-carousel__nav js-detail-carousel-nav" style="">
+										<div class="owl-dot active">
+											<img class="owl-preview" data-picture-id="2353534" src="http://via.placeholder.com/92x74">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-detail-carousel__bottom">
+								<span class="rs_detail-podimg">Нажмите, чтобы увеличить изображение</span><br>
+								<br>
+								<span><!--noindex-->Обратите внимание: изображение на сайте может незначительно отличаться от фактического внешнего вида товара.<!--/noindex--></span><br>
+							</div>
+							<div class="product-social">
+									<div class="product-social__title">
+										Рассказать друзьям
+									</div>
+									<div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=04" data-services="twitter,facebook,google,odnoklassniki,vkontakte">
+										<div class="pluso-010010100110-04">
+											<span class="pluso-wrap" style="background:transparent"><a class="pluso-twitter" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Twitter"></a><a class="pluso-facebook" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Facebook"></a><a class="pluso-google" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Google+"></a><a class="pluso-odnoklassniki" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Одноклассники"></a><a class="pluso-vkontakte" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="ВКонтакте"></a><a class="pluso-more" href="https://pluso.ru/"></a></span>
+										</div>
+									</div>
+								</div>
+						</div>
+
+							<div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 product-description">
+								<div class="product-box">
+									<div class="product-code">
+										Артикул:<span class="js-article">314&nbsp;090</span>
+									</div>
+									<div class="product-params">
+										<span class="product-params__brand"></span> <span class="product-params__rating"></span>
+										<table align="center" class="bx_item_detail_rating">
+											<tbody>
+												<tr>
+													<td>
+														<div class="bx_item_rating">
+															<div class="bx_stars_container">
+																<div class="bx_stars_bg" id="bx_vo_10_48534_sBq3II_stars"></div>
+																<div class="bx_stars_progres" id="bx_vo_10_48534_sBq3II_progr" style="width: 0%;"></div>
+															</div>
+														</div>
+													</td>
+													<td><span class="bx_stars_progres_name"><span class="bx_stars_rating_votes" id="bx_vo_10_48534_sBq3II_rating">0</span> оценок</span></td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+								<div class="products__prices">
+									<div class="prices">
+										<div class="prices__title"></div>
+										<div class="prices__values">
+											<div class="prices__val prices__val_cool">
+												57 556 руб.
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-buyblock">
+									<!--noindex-->
+									<form>
+										<div class="loss-menu-right loss-menu-right_last quantity-block">
+											<select class="btn select-item">
+												<option value="">
+													10
+												</option>
+												<option value="">
+													20
+												</option>
+											</select>
+										</div>
+										<button class="btn btn-default btn2 product-buyblock__addcart submit js-add2basketlink add2basketlink" data-loading-text="Добавление..." data-popup="Y" rel="nofollow" type="submit" value="">В корзину</button> 
+										<a class="btn btn-default btn-button product-buyblock__buy1click js-buy1click JS-Popup-Ajax" data-insertdata="{&quot;RS_EXT_FIELD_0&quot;:&quot;[48534] Станция бармена (барная станция) 1200*400(600)*850&quot;}" href="/forms/buy1click/" role="button" title="Купить в 1 клик">Купить в 1 клик</a>
+									</form>
+
+									<div aria-labelledby="ddmStores_48534" class="dropdown-menu dropdown-menu-right" role="menu">
+										<div>
+											<div class="store-item store_1">
+												<div class="title">
+													Основной<span class="amount"><span class="stores-icon"></span><span class="genamount empty">нет</span></span>
+												</div>
+												<div class="phone"></div>
+												<div class="schedule"></div>
+												<div class="mail"></div>
+											</div>
+										</div>
+									</div>
+									<span class="product-actions">
+										<span class="product__compare compare icon-east js-compare-box hidden-xs">
+											<a class="js-compare-label js-compare-switcher js-toggle-switcher" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/"><i class="fa fa-align-left"></i> <span>К сравнению</span> </a>  
+										</span> 
+										<span class="product__favorite icon-east js-favorite js-favorite-heart hidden-xs" data-detailpageurl="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" data-elementid="48534">
+											<a href="javascript:;">
+												<i class="fa fa-heart"></i> 
+												<span class="">В избранное</span>
+											</a> 
+										</span> 
+										<a href="/about/dostavka-i-oplata/">Доставка</a> <a href="/about/kak-zakazat/" style="margin-left: 15px;">Как заказать</a>
+									</span>
+									<div class="clearfix"></div>
+								</div>
+								<div class="product-announce">
+									Станция бармена (барная станция) 1200*400(600)*850
+								</div>
+								<div class="col col-xs-12 col col-md-9 col-lg-10">
+									<div class="tabs hidden-sm hidden-xs" id="product-detail-tabs">
+										<ul class="nav nav-tabs">
+											<li class="tabs-item active">
+												<a aria-expanded="true" class="tabs-item__label detailtext active" data-toggle="tab" href="#description-s">Описание</a>
+											</li>
+											<li class="tabs-item">
+												<a class="tabs-item__label properties" data-toggle="tab" href="#properties-s">Характеристики</a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="description-s">
+												<div>
+													<h2 class="product-content__title">Описание</h2>Нерж.сталь 304-1,5мм, 430-1мм, проф. 40*40, б/борта, полка, мойка 1100*300*300 сварная теплоизолированная, перфор.вставки, Два рейла для бутылок в комплекте. Чертеж 0014-СтБ-Свк-12_08_02
+												</div>
+											</div>
+											<div class="tab-pane" id="properties-s">
+												<h2 class="product-content__title">Характеристики</h2>
+												<div class="characteristics__content">
+													<div class="characteristics__item">
+														<ul class="characteristics-list">
+															<li class="characteristics-list__item"><span class="characteristics-list__name"><span class="characteristics-list__label">Длина, мм</span></span><span class="characteristics-list__value">1200</span></li>
+															<li class="characteristics-list__item"><span class="characteristics-list__name"><span class="characteristics-list__label">Ширина, мм</span></span><span class="characteristics-list__value">600</span></li>
+															<li class="characteristics-list__item"><span class="characteristics-list__name"><span class="characteristics-list__label">Высота, мм</span></span><span class="characteristics-list__value">850</span></li>
+															<li class="characteristics-list__item"><span class="characteristics-list__name"><span class="characteristics-list__label">Сталь</span></span><span class="characteristics-list__value">AISI 430/AISI 304</span></li>
+															<li class="characteristics-list__item"><span class="characteristics-list__name"><span class="characteristics-list__label">Бренд</span></span><span class="characteristics-list__value">Камик</span></li>
+															<li class="characteristics-list__item"><span class="characteristics-list__name"><span class="characteristics-list__label">Страна</span></span><span class="characteristics-list__value">Россия</span></li>
+														</ul>
+													</div><!--/characteristics__item-->
+												</div><!--/characteristics__content-->
+											</div>
+										</div>
+									</div>
+									<div class="panel-group visible-sm visible-xs mobile-props" id="product-detail-tabs-accordion"></div>
+								</div>
+							</div>
+					</div>
+				</div>
+
+				<div class="reviews-bar row">
+					<div class="col col-md-12">
+						<div class="row">
+							<div class="col col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <h2 class="product-content__title">Отзывы</h2>
+              </div>
+              <div class="col col-xs-12 col-sm-12 col-md-9 col-lg-9">
+              	<div class="form-panel">
+	                 <a class="btn btn-default btn2" href="#form_reviews" title="Оставить отзыв" onclick="showComment(0, 0, this)">
+	                      Оставить отзыв
+	                  </a>
+	              </div>
+              </div>
+						</div>
+					</div>
+					<div class="col col-md-12">
+						<div class="row">
+							<div class="col col-md-12">
+								<div class="alert alert-info">
+									Тут еще никто ничего не писал, стань первым!
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="products container">
+	        <h2 class="product-content__title">
+                <span>Популярные товары</span>
+            </h2>
+	        <div  class="products-new products-owl-slider owl-carousel owl-theme">
+	            <div class="item">
+	                <div class="products__in">
+	                    <div class="products__pic">
+	                        <a href="#">
+	                            <img class="products__img" src="./images/products1.jpg" alt="">
+	                        </a>
+	                        <div class="marks"></div>
+	                    </div>
+	                    <div class="products__data">
+	                        <div class="products__name">
+	                            <a class="products-title" href="#">Линия раздачи "Лира Мини" 4,55 п/м.</a>
+	                            <br>
+	                        </div>
+	                        <div class="hidden-xs products__category separator">
+
+	                        </div>
+	                        <div class="products__prices">
+	                            <div class="prices">
+	                                <div class="hidden-xs prices__title"></div>
+	                                <div class="prices__values">
+	                                    <div class="prices__val prices__val_cool">237 250 руб.</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="products__in">
+	                    <div class="products__pic">
+	                        <a href="#">
+	                            <img class="products__img" src="./images/products2.jpg" alt="">
+	                        </a>
+	                        <div class="marks"></div>
+	                    </div>
+	                    <div class="products__data">
+	                        <div class="products__name">
+	                            <a class="products-title" href="#">Линия раздачи "Лира Классик" 7,8 п/м.</a>
+	                            <br>
+	                        </div>
+	                        <div class="hidden-xs products__category separator">
+	                        </div>
+	                        <div class="products__prices">
+	                            <div class="prices">
+	                                <div class="hidden-xs prices__title"></div>
+	                                <div class="prices__values">
+	                                    <div class="prices__val prices__val_cool">433 216 руб.</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="products__in">
+	                    <div class="products__pic">
+	                        <a href="#">
+	                            <img class="products__img" src="./images/products3.jpg" alt="">
+	                        </a>
+	                        <div class="marks"></div>
+	                    </div>
+	                    <div class="products__data">
+	                        <div class="products__name">
+	                            <a class="products-title" href="#">Линия раздачи "Лира Буфет" 10,1 п/м.</a>
+	                            <br>
+	                        </div>
+	                        <div class="hidden-xs products__category separator">
+	                        </div>
+	                        <div class="products__prices">
+	                            <div class="prices">
+	                                <div class="hidden-xs prices__title"></div>
+	                                <div class="prices__values">
+	                                    <div class="prices__val prices__val_cool">533 573,50 руб.</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="products__in">
+	                    <div class="products__pic">
+	                        <a href="#">
+	                            <img class="products__img" src="./images/products4.jpg" alt="">
+	                        </a>
+	                        <div class="marks"></div>
+	                    </div>
+	                    <div class="products__data">
+	                        <div class="products__name">
+	                            <a class="products-title" href="#">СТОЛ ОХЛАЖДАЕМЫЙ (нижний агрегат, с бортом) 2000*700*850 3 двери, 2 ящика</a>
+	                            <br>
+	                        </div>
+	                        <div class="hidden-xs products__category separator">
+	                        </div>
+	                        <div class="products__prices">
+	                            <div class="prices">
+	                                <div class="hidden-xs prices__title"></div>
+	                                <div class="prices__values">
+	                                    <div class="prices__val prices__val_cool">98 121,80 руб.</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="products__in">
+	                    <div class="products__pic">
+	                        <a href="#">
+	                            <img class="products__img" src="./images/products1.jpg" alt="">
+	                        </a>
+	                        <div class="marks"></div>
+	                    </div>
+	                    <div class="products__data">
+	                        <div class="products__name">
+	                            <a class="products-title" href="#">Линия раздачи "Лира Мини" 4,55 п/м.</a>
+	                            <br>
+	                        </div>
+	                        <div class="hidden-xs products__category separator">
+	                        </div>
+	                        <div class="products__prices">
+	                            <div class="prices">
+	                                <div class="hidden-xs prices__title"></div>
+	                                <div class="prices__values">
+	                                    <div class="prices__val prices__val_cool">237 250 руб.</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="products__in">
+	                    <div class="products__pic">
+	                        <a href="#">
+	                            <img class="products__img" src="./images/products2.jpg" alt="">
+	                        </a>
+	                        <div class="marks"></div>
+	                    </div>
+	                    <div class="products__data">
+	                        <div class="products__name">
+	                            <a class="products-title" href="#">Линия раздачи "Лира Классик" 7,8 п/м.</a>
+	                            <br>
+	                        </div>
+	                        <div class="hidden-xs products__category separator">
+	                        </div>
+	                        <div class="products__prices">
+	                            <div class="prices">
+	                                <div class="hidden-xs prices__title"></div>
+	                                <div class="prices__values">
+	                                    <div class="prices__val prices__val_cool">433 216 руб.</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="products__in">
+	                    <div class="products__pic">
+	                        <a href="#">
+	                            <img class="products__img" src="./images/products3.jpg" alt="">
+	                        </a>
+	                        <div class="marks"></div>
+	                    </div>
+	                    <div class="products__data">
+	                        <div class="products__name">
+	                            <a class="products-title" href="#">Линия раздачи "Лира Буфет" 10,1 п/м.</a>
+	                            <br>
+	                        </div>
+	                        <div class="hidden-xs products__category separator">
+	                        </div>
+	                        <div class="products__prices">
+	                            <div class="prices">
+	                                <div class="hidden-xs prices__title"></div>
+	                                <div class="prices__values">
+	                                    <div class="prices__val prices__val_cool">533 573,50 руб.</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <div class="products__in">
+	                    <div class="products__pic">
+	                        <a href="#">
+	                            <img class="products__img" src="./images/products4.jpg" alt="">
+	                        </a>
+	                        <div class="marks"></div>
+	                    </div>
+	                    <div class="products__data">
+	                        <div class="products__name">
+	                            <a class="products-title" href="#">СТОЛ ОХЛАЖДАЕМЫЙ (нижний агрегат, с бортом) 2000*700*850 3 двери, 2 ящика</a>
+	                            <br>
+	                        </div>
+	                        <div class="hidden-xs products__category separator">
+	                        </div>
+	                        <div class="products__prices">
+	                            <div class="prices">
+	                                <div class="hidden-xs prices__title"></div>
+	                                <div class="prices__values">
+	                                    <div class="prices__val prices__val_cool">98 121,80 руб.</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    	</div>
+
+				<div class="product-viewed-list">
+					<h2 class="product-content__title">
+						<span class="secondLine">
+							Вы уже смотрели			
+						</span>
+					</h2>
+					<div class="products productsmini-owl-slider owl-carousel">
+						<div class="product-viewed-list__item item">
+							<div class="product-viewed-list__img">
+								<a class="product-recom-list__item-url" href="/catalog/neytralnoe-oborudovanie/stantsii-barmena/stantsiya-barmena-1200-400-600-850/"><img alt="станция бармена (барная станция) 1200*400(600)*850" src="http://via.placeholder.com/85x68" title="станция бармена (барная станция) 1200*400(600)*850"></a>
+							</div>
+							<div class="product-viewed-list__description">
+								<a class="product-viewed-list__name text-fadeout" href="/catalog/neytralnoe-oborudovanie/stantsii-barmena/stantsiya-barmena-1200-400-600-850/" title="Станция бармена (барная станция) 1200*400(600)*850">Станция бармена (барная станция) 1200*400(600)*850</a>
+								<div class="product-viewed-list__price">
+									<div class="prices__val prices__val_cool">
+										57 556 руб.
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<footer class="hidden-sm hidden-xs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="footer_header">
+                    <a href="#">Все оборудование</a>
+                </div>
+                <ul class="list-unstyled footer_menu">
+                    <li><a href="#">Всё оборудование</a></li>
+                    <li><a href="#">Нейтральное оборудование</a></li>
+                    <li><a href="#">Витрины нейтральные</a></li>
+                    <li><a href="#">Холодильное</a></li>
+                    <li><a href="#">Тепловое</a></li>
+                    <li><a href="#">Электромеханическое</a></li>
+                    <li><a href="#">Посудомоечное</a></li>
+                    <li><a href="#">Линии раздачи</a></li>
+                    <li><a href="#">Весовое</a></li>
+                    <li><a href="#">Фильтры водяные</a></li>
+                    <li><a href="#">ХОЛОДИЛЬНОЕ ОБОРУДОВАНИЕ</a></li>
+                    <li><a href="#">Оборудование Камик</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="footer_header">
+                    <a href="#">Все услуги</a>
+                </div>
+                <ul class="list-unstyled footer_menu">
+                    <li><a href="#">Шефмонтаж</a></li>
+                    <li><a href="#">Комплексное оснащение</a></li>
+                    <li><a href="#">Техническая планировка</a></li>
+                    <li><a href="#">Монтаж</a></li>
+                    <li><a href="#">Проектирование</a></li>
+                    <li><a href="#">Ресторанное консультирование</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="footer_header">
+                    <a href="#">О компании</a>
+                </div>
+                <ul class="list-unstyled footer_menu">
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Производство</a></li>
+                    <li><a href="#">Дилерам</a></li>
+                    <li><a href="#">Партнеры</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <div class="footer_header">
+                    <a href="tel: +74996411111" rel="nofollow">+7(499) 641-11-11</a>
+                </div>
+                <div class="address_block">
+                    <div>
+                        <span class="banner_desc_nowrap">Адрес:</span><br>
+                        <span class="banner_desc_nowrap">г. Москва, ул. 2-я Звенигородская 12 стр.5 </span>
+                        <span class="banner_desc_nowrap"><br>Адрес проходной: </span> <br>
+                        <span class="banner_desc_nowrap">г. Москва, ул. 2-я Звенигородская 3 </span>
+                        <span class="banner_desc_nowrap"><br>Часы работы:</span><br>
+                        <span class="banner_desc_nowrap">пн-чт с 9:30 до 18:00 пт- с 9:30 до 17:30<br></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer_copyright_container">
+        <div class="footer_copyright">
+            <a href="/"><img src="./images/logo_footer.png"></a>
+            <div class="footer_copyright_description">
+                Производитель оставляет за собой право менять характеристики продукции без предварительного уведомления, изображение товара может отличаться от фактического внешнего вида изделия.
+                <br>
+                Информация, размещенная на сайте, носит исключительно справочный характер и не является публичной офертой, определяемой положениями ст. 437 ГК РФ.
+                <br>
+                2002-2018 ТД "Камик". Производство и продажа оборудования из нержавеющей стали для заведений общепита.</div>
+        </div>
+    </div>
+	</footer>
+
+
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/fancybox/jquery.fancybox.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

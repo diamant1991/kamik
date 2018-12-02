@@ -21,6 +21,8 @@ $(document).ready(function() {
         navText: []
     });
 
+
+
     $('#features').owlCarousel({
         loop:true,
         dots:false,
@@ -77,6 +79,33 @@ $(document).ready(function() {
         }
     });
 
+    $('.newslistcol-list').owlCarousel({
+        loop: false,
+        dots:false,
+        nav: true,
+        autoplay:false,
+        margin:20,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav: true
+            },
+            600:{
+                items:2,
+                nav: true
+            },
+            1000:{
+                items:3,
+                nav: true
+            },
+            1459:{
+                items:4,
+                nav: true
+            }
+        }
+    });
+    
     $('.products-new, .category-owl-slider, .partners-owl-slider, .portfolio-owl-slider').owlCarousel({
         loop:true,
         dots:false,

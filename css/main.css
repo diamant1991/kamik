@@ -212,8 +212,8 @@ a.popup_link:hover{
     margin-left: -1px;
 }
 .searchinhead .btn2 {
-    border: 1px solid #d34537;
-    background: #d34537;
+    border: 1px solid #d34537 !important;
+    background: #d34537 !important;
     color: #fff;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -3703,4 +3703,10 @@ a.btn.btn-default.btn-button.JS-Popup-Ajax {
 .docs .docs-dl,
 .docs .docs-info {
   margin-left: 10px;
+}
+
+.footer_copyright_description {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
 }

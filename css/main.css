@@ -330,7 +330,8 @@ a.popup_link:hover{
 #dropdown_favorite.active{
     display: block;
 }
-.dropdown-favorite:after, .dropdown-favorite:before {
+.dropdown-favorite:after, 
+.dropdown-favorite:before {
     content: " ";
     bottom: 100%;
     left: 645px;
@@ -355,6 +356,11 @@ a.popup_link:hover{
     border-width: 12px;
     margin-left: -12px;
     left: 570px;
+}
+
+.dropdown-basket::before,
+.dropdown-basket::after {
+  left: 645px;
 }
 .alert-info {
     background-color: #FBFBFB;
@@ -1070,9 +1076,52 @@ footer a:hover{
   text-decoration: none;
   background-color: rgba(204, 204, 204, 0.3);
 }
+
+.top-menu__block > li:hover .top-menu__dropdown {
+  display: block;
+}
+
 .top-menu__dropdown {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  padding: 20px 15px 60px;
+  border-bottom: 2px solid #4851ae;
+  width: 550px;
+  background: #fff;
 }
+
+.top-menu__dropdown__item {
+  float: left;
+  width: 33.3%;
+}
+
+.top-menu__dropdown__item,
+.top-menu__dropdown__item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu__dropdown__item > li > a{
+  font-weight: bold;
+  padding: 5px 0;
+  display: inline-block;
+  color: #555;
+}
+
+.top-menu__dropdown__item ul a{
+  padding: 0px 0;
+  font-size: 12px;
+  color: #555;
+}
+
+    
+
+
+
 /* line 7310, ../sass/_styles.scss */
 .mobile-menu-wrap {
   display: block;
@@ -1328,6 +1377,7 @@ footer a:hover{
 }
 /* line 7527, ../sass/_styles.scss */
 .mobile-menu-nav__submenu {
+  list-style: none;
   display: block;
   padding-left: 0;
   position: absolute;
@@ -3709,4 +3759,40 @@ a.btn.btn-default.btn-button.JS-Popup-Ajax {
     display: inline-block;
     vertical-align: middle;
     margin-left: 15px;
+}
+
+.dropdown-basket .basket-table.basket-table--small .basket-table__itemphoto, 
+.dropdown-favorite .basket-table.basket-table--small .basket-table__itemphoto {
+  width: 10%;
+  position: relative;
+}
+
+.basket-table .basket-table__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    margin: 1px 5px;
+}
+.basket-table--small .basket-table__price, 
+.basket-table--small .basket-table__sum {
+    min-width: 130px;
+    padding: 0 10px;
+}
+.basket-table--small .basket-table__name a {
+    color: #000;
+}
+.basket-table td {
+  vertical-align: middle;
+}
+
+.basket-table tr:first-child td {
+  border-top: 0;
 }

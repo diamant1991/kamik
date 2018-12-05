@@ -57,7 +57,12 @@
         </span></a>
         <ul class="mobile-menu-nav__submenu js-mobile-menu-nav">
           <li class="mobile-menu-nav__element">
-            <a class="mobile-menu-nav__link back" href="javascript:%200;">Назад<span class="mobile-menu-nav__arrow back"></span></a>
+            <a class="mobile-menu-nav__link back" href="javascript:%200;">
+              Назад
+              <span class="mobile-menu-nav__arrow back">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
           </li>
           <li class="mobile-menu-nav__element">
             <a class="mobile-menu-nav__link disabled" href="/contacts/">Контакты</a>
@@ -333,6 +338,101 @@
                             </div>
                         </div>
                     </div>
+                    <div class="dropdown-favorite dropdown-basket loss-menu-right" id="dropdown_basket">
+                        <div class="js-smbasket">
+                        <div class="heighter" style="padding-bottom: 35px;">
+                          <table class="table basket-table basket-table--small">
+                            <tbody>
+                              <tr class="js-element" data-id="134101" data-product-id="48534">
+                                <td class="basket-table__itemphoto">
+                                  <div class="basket-table__photo js-item_picture" style="background-image: url('images/5cb252d7170eb23d7dbffcfd64b9e578.jpg')"></div>
+                                </td>
+                                <td class="basket-table__item">
+                                  <div class="row">
+                                    <div class="basket-table__name col-xs-11 col-md-12">
+                                      <a class="js-item_name" href="/catalog/neytralnoe-oborudovanie/stantsii-barmena/stantsiya-barmena-1200-400-600-850/">Станция бармена (барная станция) 1200*400(600)*850</a>
+                                    </div>
+                                    <div class="col col-md-12 hidden-xs hidden-sm">
+                                      <span class="basket-table__itemid"><i class="small">id:</i> 134101</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="basket-table__price">
+                                  <i class="small">Цена</i>
+                                  <div>
+                                    <span class="h4"><b class="js-item-price prices__val prices__val_cool">57 556 руб.</b></span>
+                                  </div>
+                                </td>
+                                <td class="basket-table__quantity text-center">
+                                  <div class="loss-menu-right loss-menu-right_last">
+                                    <select class="select-item" name="" id="">
+                                      <option value="">1 шт</option>
+                                      <option value="">2 шт</option>
+                                    </select>
+                                  </div>
+                                </td>
+                                <td class="basket-table__sum">
+                                  <i class="small">Сумма</i>
+                                  <div>
+                                    <span class="h4"><b class="js-item-sum prices__val prices__val_cool">57 556 руб.</b></span>
+                                  </div>
+                                </td>
+                                <td class="basket-table__controls">
+                                  <a class="js-smbasket__delete" href="javascript:;" onclick="bx_basket1.removeItemFromCart(134101)"><i class="fa fa-trash"></i></a>
+                                </td>
+                              </tr>
+                              <tr class="js-element" data-id="134084" data-product-id="48227">
+                                <td class="basket-table__itemphoto">
+                                  <div class="basket-table__photo js-item_picture" style="background-image: url('images/5cb252d7170eb23d7dbffcfd64b9e578.jpg')"></div>
+                                </td>
+                                <td class="basket-table__item">
+                                  <div class="row">
+                                    <div class="basket-table__name col-xs-11 col-md-12">
+                                      <a class="js-item_name" href="/catalog/vesovoe-oborudovanie/vesy-tovarnye/vesy-tovarnye-cas-dl-60/">Весы товарные CAS DL-60</a>
+                                    </div>
+                                    <div class="col col-md-12 hidden-xs hidden-sm">
+                                      <span class="basket-table__itemid"><i class="small">id:</i> 134084</span>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="basket-table__price">
+                                  <i class="small">Цена</i>
+                                  <div>
+                                    <span class="h4"><b class="js-item-price prices__val prices__val_cool">21 876,39 руб.</b></span>
+                                  </div>
+                                </td>
+                                <td class="basket-table__quantity text-center">
+                                  <div class="loss-menu-right loss-menu-right_last">
+                                    <select class="select-item" name="" id="">
+                                      <option value="">1 шт</option>
+                                      <option value="">2 шт</option>
+                                    </select>
+                                  </div>
+                                </td>
+                                <td class="basket-table__sum">
+                                  <i class="small">Сумма</i>
+                                  <div>
+                                    <span class="h4"><b class="js-item-sum prices__val prices__val_cool">21 876,39 руб.</b></span>
+                                  </div>
+                                </td>
+                                <td class="basket-table__controls">
+                                  <a class="js-smbasket__delete" href="javascript:;" onclick="bx_basket1.removeItemFromCart(134084)"><i class="fa fa-trash"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div class="row">
+                          <div class="col col-xs-12">
+                            <div class="pull-right">
+                              <div class="" style="margin-top: 15px">
+                                <span style="padding: 6px 12px">Всего в корзине 2 товара на сумму <span class="js-total-price">79 432,39 руб.</span></span> <a class="btn btn-default btn2" href="/personal/cart/" style="margin-left: 15px;">Перейти в корзину</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -345,6 +445,28 @@
               <li>
                 <a href="#">Нейтральное оборудование</a>
                 <div class="top-menu__dropdown">
+                  <ul class="top-menu__dropdown__item">
+                    <li>
+                      <a href="#">Пункт 1</a>
+                    </li>
+                    <li>
+                      <a href="#">Пункт 2</a>
+                    </li>
+                    <li>
+                      <a href="#">Пункт 3</a>
+                      <ul>
+                        <li>
+                          <a href="#">Подпункт 1</a>
+                        </li>
+                        <li>
+                          <a href="#">Подпункт 2</a>
+                        </li>
+                        <li>
+                          <a href="#">Подпункт 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
                   <ul class="top-menu__dropdown__item">
                     <li>
                       <a href="#">Пункт 1</a>

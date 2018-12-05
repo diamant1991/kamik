@@ -180,6 +180,42 @@ $(document).ready(function() {
       }
     });
 
+    $('.mobile-menu-nav__link').click(function(e) {
+      if (!$(this).hasClass('back')) {
+        var $drop = $(this).next();
+
+        if ($drop.length) {
+          e.preventDefault();
+          $drop.addClass('open')
+        }
+      } else {
+        var $drop = $(this).closest('.mobile-menu-nav__submenu');
+        $drop.removeClass('open');
+      }
+    });
+
+    $('#dropdown_basket_link').click(function(e) {
+      e.preventDefault()
+      var $basket = $('#dropdown_basket');
+
+      if ($basket.is(':hidden')) {
+        $basket.show()
+      } else {
+        $basket.hide()
+      }
+    });
+
+    $('#inheadfavorite').click(function(e) {
+      e.preventDefault()
+      var $basket = $('#dropdown_favorite');
+
+      if ($basket.is(':hidden')) {
+        $basket.show()
+      } else {
+        $basket.hide()
+      }
+    });
+
     $('.js-views-switcher').click(function(e) {
         var view = $(this).attr('data-index');
         $('.product-view').removeClass('active');

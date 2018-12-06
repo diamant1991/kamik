@@ -429,11 +429,16 @@
 									<div class="product-social__title">
 										Рассказать друзьям
 									</div>
-									<div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=04" data-services="twitter,facebook,google,odnoklassniki,vkontakte">
-										<div class="pluso-010010100110-04">
-											<span class="pluso-wrap" style="background:transparent"><a class="pluso-twitter" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Twitter"></a><a class="pluso-facebook" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Facebook"></a><a class="pluso-google" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Google+"></a><a class="pluso-odnoklassniki" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="Одноклассники"></a><a class="pluso-vkontakte" href="https://kamik-group.ru/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" title="ВКонтакте"></a><a class="pluso-more" href="https://pluso.ru/"></a></span>
-										</div>
-									</div>
+									<script type="text/javascript">(function() {
+									  if (window.pluso)if (typeof window.pluso.start == "function") return;
+									  if (window.ifpluso==undefined) { window.ifpluso = 1;
+									    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+									    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+									    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+									    var h=d[g]('body')[0];
+									    h.appendChild(s);
+									  }})();</script>
+									<div class="pluso" data-background="transparent" data-options="big,round,line,horizontal,nocounter,theme=04" data-services="twitter,facebook,google,odnoklassniki,vkontakte"></div>
 								</div>
 						</div>
 
@@ -486,7 +491,7 @@
 											</select>
 										</div>
 										<button class="btn btn-default btn2 product-buyblock__addcart submit js-add2basketlink add2basketlink" data-loading-text="Добавление..." data-popup="Y" rel="nofollow" type="submit" value="">В корзину</button> 
-										<a class="btn btn-default btn-button product-buyblock__buy1click js-buy1click JS-Popup-Ajax" data-insertdata="{&quot;RS_EXT_FIELD_0&quot;:&quot;[48534] Станция бармена (барная станция) 1200*400(600)*850&quot;}" href="/forms/buy1click/" role="button" title="Купить в 1 клик">Купить в 1 клик</a>
+										<a data-fancybox data-src="#one-click" class="btn btn-default btn-button product-buyblock__buy1click js-buy1click JS-Popup-Ajax"  href="javascript:;" role="button" title="Купить в 1 клик">Купить в 1 клик</a>
 									</form>
 
 									<div aria-labelledby="ddmStores_48534" class="dropdown-menu dropdown-menu-right" role="menu">
@@ -503,13 +508,15 @@
 									</div>
 									<span class="product-actions">
 										<span class="product__compare compare icon-east js-compare-box hidden-xs">
-											<a class="js-compare-label js-compare-switcher js-toggle-switcher" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/"><i class="fa fa-align-left"></i> <span>К сравнению</span> </a>  
+											<a class="js-compare-label js-compare-switcher js-toggle-switcher" href="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/"><i class="fa fa-align-left"></i> <span>К сравнению</span> </a> 
+											<span class="tooltip">Добавить к сравнению</span>
 										</span> 
 										<span class="product__favorite icon-east js-favorite js-favorite-heart hidden-xs" data-detailpageurl="/catalog/neytralnoe-oborudovanie/stantsiya-barmena-1200-400-600-850/" data-elementid="48534">
 											<a href="javascript:;">
 												<i class="fa fa-heart"></i> 
 												<span class="">В избранное</span>
 											</a> 
+											<span class="tooltip">Добавить в избранное</span>
 										</span> 
 										<a href="/about/dostavka-i-oplata/">Доставка</a> <a href="/about/kak-zakazat/" style="margin-left: 15px;">Как заказать</a>
 									</span>
@@ -565,7 +572,7 @@
               </div>
               <div class="col col-xs-12 col-sm-12 col-md-9 col-lg-9">
               	<div class="form-panel">
-	                 <a class="btn btn-default btn2" href="#form_reviews" title="Оставить отзыв" onclick="showComment(0, 0, this)">
+	                 <a class="btn btn-default btn2" data-fancybox data-src="#get-review" href="javascript:;" title="Оставить отзыв">
 	                      Оставить отзыв
 	                  </a>
 	              </div>
@@ -905,6 +912,103 @@
         </div>
     </div>
 	</footer>
+
+	<div class="popup popup--call" id="one-click">
+		<div class="fancybox-title fancybox-title-inside-wrap">Купить в 1 клик</div>
+		<div class="popup__content">
+			<form action="" class="rsform">
+				<div class="form-group">
+					<label for="RS_NAME">Имя <span class="required">*</span></label> <input class="req-input form-item form-control" name="RS_NAME" type="text" value="">
+				</div>
+				<div class="form-group">
+					<label for="RS_PHONE">Телефон <span class="required">*</span></label> <input class="req-input form-item form-control" name="RS_PHONE" type="text" value="">
+				</div>
+				<div class="form-group">
+					<label for="RS_EXT_FIELD_0">Товар <span class="required">*</span></label> 
+					<input type="text" value="48534] Станция бармена (барная станция) 1200*400(600)*850" name="RS_EXT_FIELD_0" class=" form-item form-control" readonly="">
+				</div>
+				<div class="form-group">
+					<label for="RS_TEXTAREA">Комментарий автора</label> 
+					<textarea class="form-item form-control" name="RS_TEXTAREA"></textarea>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-md-12 form-license-text">
+						*<br>
+						<br>
+					</div>
+				</div>
+				<div class="rsform__captcha clearfix">
+					<div class="captcha_wrap">
+						<div class="rsform__captcha-label">
+							<label for="captcha_sid">Введите код с картинки <span class="required">*</span></label>
+						</div>
+						<div class="rsform__captcha-input">
+							<input name="captcha_sid" type="hidden" value="0d76269b09f0659ba7f4852cf600f432"> <input class="form-control req-input form-item" id="captcha_" maxlength="50" name="captcha_word" size="30" type="text" value="">
+						</div>
+						<div class="rsform__captcha-image"><img alt="CAPTCHA" src="images/captcha.jpg"></div>
+					</div>
+				</div>
+				<div class="separator rsform__separator"></div>
+				<div class="rsform__bottom">
+					<div class="rsform__bottom-ps">
+						<span class="required">*</span> - поля обязательные к заполнению
+					</div>
+					<div class="rsform__bottom-button">
+						<input name="PARAMS_HASH" type="hidden" value="cc365bf4501a55493c71b4da39ea65e6"> <input class="btn btn-group-lg btn-default btn2" name="submit" type="submit" value="Отправить">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="popup popup--call" id="get-review">
+		<div class="fancybox-title fancybox-title-inside-wrap">Оставить отзыв</div>
+		<div class="popup__content">
+			<form action="" class="rsform">
+				<div class="form-group">
+					<label for="RS_NAME">Оценка</label>
+				</div>
+				<div class="form-group">
+					<label for="RS_NAME">Ваше имя <span class="required">*</span></label> <input class="req-input form-item form-control" name="RS_NAME" type="text" value="">
+				</div>
+				<div class="form-group">
+					<label for="RS_PHONE">E-mail <span class="required">*</span></label> <input class="req-input form-item form-control" name="RS_PHONE" type="text" value="">
+				</div>
+				<div class="form-group">
+					<label for="RS_TEXTAREA">Достоинства:</label> 
+					<textarea class="form-item form-control" name="RS_TEXTAREA"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="RS_TEXTAREA">Недостатки:</label> 
+					<textarea class="form-item form-control" name="RS_TEXTAREA"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="RS_TEXTAREA">Комментарий <span class="required">*</span></label> 
+					<textarea class="form-item form-control" name="RS_TEXTAREA"></textarea>
+				</div>
+				<div class="rsform__captcha clearfix">
+					<div class="captcha_wrap">
+						<div class="rsform__captcha-label">
+							<label for="captcha_sid">Код подтверждения (символы на картинке)<span class="required">*</span></label>
+						</div>
+						<div class="rsform__captcha-input">
+							<input name="captcha_sid" type="hidden" value="0d76269b09f0659ba7f4852cf600f432"> <input class="form-control req-input form-item" id="captcha_" maxlength="50" name="captcha_word" size="30" type="text" value="">
+						</div>
+						<div class="rsform__captcha-image"><img alt="CAPTCHA" src="images/captcha.jpg"></div>
+					</div>
+				</div>
+				<div class="separator rsform__separator"></div>
+				<div class="rsform__bottom">
+					<div class="rsform__bottom-ps">
+						<span class="required">*</span> - поля обязательные к заполнению
+					</div>
+					<div class="rsform__bottom-button">
+						<input name="PARAMS_HASH" type="hidden" value="cc365bf4501a55493c71b4da39ea65e6"> <input class="btn btn-group-lg btn-default btn2" name="submit" type="submit" value="Отправить">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 
 
 

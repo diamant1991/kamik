@@ -1,3 +1,9 @@
+@media (min-width: 1620px) {
+    .category__item {
+        flex: 0 0 16.6666%;
+        max-width: 16.6666%;
+    }
+}
 @media (max-width: 1023px){
     .container {
         width: auto;

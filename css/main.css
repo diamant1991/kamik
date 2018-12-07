@@ -2997,6 +2997,7 @@ PRODUCT VIEWED*/
 }
 /* line 717, ../sass/_styles.scss */
 .nav-side .nav-side__item {
+  width: 100%;
   display: block;
   border-bottom: 1px solid rgba(204, 204, 204, 0.3);
 }

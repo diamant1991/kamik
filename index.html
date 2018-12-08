@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
     <title>kamik-group</title>
@@ -220,7 +221,7 @@
                         <div class="topmenu_item__margin">
                             <span class="city__line-label">Ваш город:</span>
                             <div class="city__line-context">
-                                <span class="city__line-name">Москва</span>
+                                <span data-fancybox data-src="#city-modal" class="city__line-name">Москва</span>
                                 <div class="city__line-question"   style="display: none">
                                     <div class="city__line-question-text">
                                         Ваш город<br>
@@ -1929,10 +1930,21 @@
     </div>
 </footer>
 
+<div class="popup popup--city" id="city-modal">
+  <div class="fancybox-title fancybox-title-inside-wrap">Мы доставляем по всей России</div>
+  <div class="popup__content">
+    <form action="" class="rsform">
+      <div class="form-group">
+        <input class="req-input form-item form-control" placeholder="Начните вводить название города" type="text" value="">
+      </div>
+  </div>
+</div>
+
 
 <script src="./js/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
+<script src="./js/fancybox/jquery.fancybox.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

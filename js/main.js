@@ -140,6 +140,30 @@ $(document).ready(function() {
         }
     });
 
+    $('.category-detail-owl-slider').owlCarousel({
+        loop:true,
+        dots:false,
+        nav:true,
+        navText: [],
+        autoplay:false,
+        margin:20,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            767:{
+                items:2,
+                nav:true
+            },
+            1199:{
+                items:3,
+                nav:true
+            }
+        }
+    });
+
     $('.news-owl-slider').owlCarousel({
         loop:true,
         dots:false,
@@ -171,12 +195,17 @@ $(document).ready(function() {
       if(!$('body').hasClass('opened-mobile-menu')) {
         $('body').addClass('opened-mobile-menu');
 
+        if(window.matchMedia('(min-width: 768px)').matches){
+          $('.fly-header--fixed').css('top', windowPos + 'px');
+        }
         $('.js-mobile-menu').css('top', windowPos + 'px');
-        $('.fly-header--fixed').css('top', windowPos + 'px');
       } else {
         $('body').removeClass('opened-mobile-menu');
+
+        if(window.matchMedia('(min-width: 768px)').matches){
+          $('.fly-header--fixed').css('top', '0');
+        }
         $('.js-mobile-menu').css('top', '0');
-        $('.fly-header--fixed').css('top', '0');
       }
     });
 
@@ -222,14 +251,21 @@ $(document).ready(function() {
         $('#' + view).addClass('active')
     });
 
-    $(window).scroll(function(event) {
-      var windowPos = $(this).scrollTop();
-      var headerPos = $('#fly-header').scrollTop();
+    if(window.matchMedia('(min-width: 768px)').matches){
+        $(window).scroll(function(event) {
+          var windowPos = $(this).scrollTop();
+          var headerPos = $('#fly-header').scrollTop();
 
-      if (windowPos > headerPos) {
-        $('#fly-header').addClass('fly-header--fixed');
-      } else {
-        $('#fly-header').removeClass('fly-header--fixed');
-      }
-    });
+          if (windowPos > headerPos) {
+            $('#fly-header').addClass('fly-header--fixed');
+          } else {
+            $('#fly-header').removeClass('fly-header--fixed');
+          }
+        });
+    }
+
+    if(window.matchMedia('(max-width: 767px)').matches){
+      $('#fly-header').addClass('fly-header--fixed');
+    }
+    
 });
